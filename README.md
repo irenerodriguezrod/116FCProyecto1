@@ -1,4 +1,6 @@
 # Fundamentos de contenerización
+    > ⚠️
+    > La actividad ha sido realizada en ubuntu, es por ello que los comandos que hay son de Ubuntu
 
 ## Actividad 1. Servidor Web Simple con Nginx
 
@@ -35,7 +37,7 @@
         apt install nano
         ```
     * Abrimos el editor que acabamos de instalar 
-        > [!CAUTION]
+        > ‼️
         > Cualquier cambio dentro del contenedor se pierde si lo paras y eliminas. Si quieres que el cambio se mantenga, lo mejor es editar el archivo `index.html` fuera del contenedor y luego reconstruir la imagen.
         ```
         nano /usr/share/nginx/html/index.html 
@@ -50,7 +52,7 @@
     ```
     docker commit 116fcproyecto1 116fcproyecto1:1.0
     ```
-    > [!WARNING] 
+    >⚠️
     > El primer nombre es el del contenedor, el segundo es el nombre de la imagen junto con la versión utilizada.
 
 - **Paso 2.** Verificar que la imagen se ha creado correctamente
@@ -62,7 +64,7 @@
     ```
     docker save -o 116fcproyecto1version1.tar 116fcproyecto1:1.0
     ```
-    > [!IMPORTANT]
+    > ‼️
     > Para importar la imagen que acabamos de crear en otro Sistema Operativo
     ```
     sudo docker load -i 116fcproyecto1version1.tar
@@ -83,9 +85,9 @@
     ```
     sudo docker push irenerodriguez/116fcproyecto1:1.0
     ```
-    > [!WARNING] 
+    > ⚠️
     > Si no existe un repo en DockerHub, da el error `denied: requested access to the resource is denied`. En caso de que el error persista, puede ser porque el login no está bien hecho (Volver a realizar el paso 1).
 
 * [LINK AL PROYECTO EN DockerHub](https://hub.docker.com/r/irenerodriguez/116fcproyecto1)
 
-**Última actualización: lunes 07 de abril de 2025**
+**Última actualización: martes 08 de abril de 2025**
