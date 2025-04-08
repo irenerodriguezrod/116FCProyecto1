@@ -1,8 +1,8 @@
-# Fundamentos de contenerización
-    > ⚠️
-    > La actividad ha sido realizada en ubuntu, es por ello que los comandos que hay son de Ubuntu
+# 🐳 | Fundamentos de contenerización
 
 ## Actividad 1. Servidor Web Simple con Nginx
+⚠️  La actividad ha sido realizada en ubuntu, es por ello que los comandos que hay son de Ubuntu
+
 
 - **Paso 1.** Construir la imagen con el mismo nombre que el repositorio con la versión 1.0
     ```
